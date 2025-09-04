@@ -5,7 +5,20 @@
   <title>Puszin</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body { background-color: #ffcce6; } /* jasny róż */
+    body { 
+      background: linear-gradient(-45deg, #ffcce6, #cce6ff, #ffe6ff, #ccf2ff);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
     #player {
       margin-top: 20px;
       width: 80%;
@@ -20,7 +33,7 @@
   <h1>Puszin – Odcinki</h1>
 
   <div class="container">
-    <a href="#" class="button" onclick="changeVideo('LBkVqEvctkg')">Prezent Pipa</a>
+    <a href="#" class="button" onclick="changeVideo('dQw4w9WgXcQ')">Odcinek 1</a>
     <a href="#" class="button" onclick="changeVideo('kxopViU98Xo')">Odcinek 2</a>
     <a href="#" class="button" onclick="changeVideo('3JZ_D3ELwOQ')">Odcinek 3</a>
     <a href="#" class="button" onclick="changeVideo('C0DPdy98e4c')">Odcinek 4</a>
