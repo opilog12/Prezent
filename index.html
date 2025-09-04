@@ -5,7 +5,35 @@
   <title>Strona Główna</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body { background-color: #ffcce6; } /* jasny róż */
+    body { 
+      background: linear-gradient(270deg, #ffcce6, #ffe6f7);
+      background-size: 400% 400%;
+      animation: gradientMove 12s ease infinite;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .love-text {
+      margin-top: 50px;
+      font-size: 20px;
+      color: #660033;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .love-img {
+      margin-top: 20px;
+      width: 150px;
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
@@ -15,11 +43,14 @@
     <a href="puszin.html" class="button">Puszin</a>
   </div>
 
-  <div style="margin-top:50px;">
-    <p>Hejki kochanie, ta strona to prezent dla ciebie,
-      chcial bym ci powiedzieć że badzo cie kocham całym moim malutkim serduszkiem,
-      przepraszam cię że się ze mną źle czujesz 
-      miłej zabawy kochanie </p>
+  <div class="love-text">
+    <p>
+      Hejki kochanie, ta strona to prezent dla ciebie,<br>
+      chciałbym ci powiedzieć, że bardzo cię kocham całym moim malutkim serduszkiem ❤️<br>
+      Przepraszam cię, że się ze mną źle czujesz.<br>
+      Miłej zabawy kochanie!
+    </p>
+    <img src="serce.png" alt="Serce" class="love-img">
   </div>
 </body>
 </html>
